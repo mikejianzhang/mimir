@@ -28,6 +28,8 @@ Entries should include a reference to the Pull Request that introduced the chang
 
 ## main / unreleased
 
+* [FEATURE] Support monolithic deployment with the helm chart. #4832
+
 ## 5.2.3
 
 * [BUGFIX] admin-cache: set max connections to fix failure to start #7632
