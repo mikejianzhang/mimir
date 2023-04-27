@@ -29,6 +29,10 @@ Entries should include a reference to the Pull Request that introduced the chang
 
 ## main / unreleased
 
+## 5.6.0-lily
+
+* [FEATURE] Support monolithic deployment with the helm chart. #4832
+
 ## 5.6.0
 
 * [ENHANCEMENT] Upgrade Mimir and GEM to [2.15.0-rc.0](https://github.com/grafana/mimir/blob/main/CHANGELOG.md#2150). #10369
