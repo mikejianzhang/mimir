@@ -2571,26 +2571,26 @@ ingress:
   enabled: false
   # ingressClassName: nginx
   annotations: {}
-  paths:
-    distributor-headless:
-      - path: /distributor
+  paths: {}
+  #  distributor-headless:
+  #    - path: /distributor
         # -- pathType (e.g. ImplementationSpecific, Prefix, .. etc.) might also be required by some Ingress Controllers
         # pathType: Prefix
-      - path: /api/v1/push
-      - path: /otlp/v1/metrics
-    alertmanager-headless:
-      - path: /alertmanager
-      - path: /multitenant_alertmanager/status
-      - path: /api/v1/alerts
-    ruler:
-      - path: /prometheus/config/v1/rules
-      - path: /prometheus/api/v1/rules
-      - path: /prometheus/api/v1/alerts
-    query-frontend:
-      - path: /prometheus
-      - path: /api/v1/status/buildinfo
-    compactor:
-      - path: /api/v1/upload/block/
+  #    - path: /api/v1/push
+  #    - path: /otlp/v1/metrics
+  #  alertmanager-headless:
+  #    - path: /alertmanager
+  #    - path: /multitenant_alertmanager/status
+  #    - path: /api/v1/alerts
+  #  ruler:
+  #    - path: /prometheus/config/v1/rules
+  #    - path: /prometheus/api/v1/rules
+  #    - path: /prometheus/api/v1/alerts
+  #  query-frontend:
+  #    - path: /prometheus
+  #    - path: /api/v1/status/buildinfo
+  #  compactor:
+  #    - path: /api/v1/upload/block/
   hosts:
     - mimir.example.com
   # tls:
