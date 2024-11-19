@@ -26,4 +26,5 @@ spec:
       targetPort: grpc
   selector:
     {{- include "mimir.selectorLabels" (dict "ctx" . "component" "monolithic" "memberlist" true) | nindent 4 }}
+  publishNotReadyAddresses: true
 {{- end }}
